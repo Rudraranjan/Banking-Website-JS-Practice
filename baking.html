@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Safe Baking</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold mt-16 text-center">My bank <span class="font-bold text-yellow-600"> Statement !!!</span> </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+
+        <!-- section for amount details -->
+
+        <section class="mt-16">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="w-3/4 bg-yellow-300 p-16 mx-auto rounded">
+                    <h1 class="text-2xl font-semibold">Deposite</h1>
+                    <h3 class="text-4xl font-semibold">$ <span id="deposit-total">00</span></h3>
+                </div>
+                <div class="w-3/4 bg-green-300 p-16 mx-auto rounded">
+                    <h1 class="text-2xl font-semibold">Withdraw</h1>
+                    <h3 class="text-4xl font-semibold">$ <span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="w-3/4 bg-blue-300 p-16 mx-auto rounded">
+                    <h1 class="text-2xl font-semibold ">Balance</h1>
+                    <h3 class="text-4xl font-semibold">$ <span id="balance-total">1240</span></h3>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- section for enter amount details -->
+
+        <section class="mt-16">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-pink-200">
+                    <h2 class="text-2xl font-semibold text-center text-black my-2">Deposit Amount</h2>
+                    <input id="deposit-amount" class="block my-8 w-3/4 rounded p-2 text-center m-auto" type="text" placeholder="Deposite Amount Type Here">
+                    <button id="deposit-button" class="block my-2 w-2/4 rounded p-2 text-center m-auto bg-yellow-500 font-bold text-white text-xl mb-4">Deposite</button>
+                </div>
+                <div class="bg-red-200">
+                    <h2 class="text-2xl font-semibold text-center text-black my-2">Withdraw Amount</h2>
+                    <input id="withdraw-amount" class="block my-8 w-3/4 rounded p-2 text-center m-auto" type="text" placeholder="Withdraw Amount Type Here">
+                    <button id="withdraw-button" class="block my-2 w-2/4 rounded p-2 text-center m-auto bg-yellow-500 font-bold text-white text-xl mb-4">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+   
+    <script src="js/banking.js"></script>
+</body>
+</html>
